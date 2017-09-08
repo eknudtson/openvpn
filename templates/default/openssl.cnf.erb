@@ -22,7 +22,7 @@ RANDFILE	= $dir/.rand
 x509_extensions	= usr_cert
 default_days	= <%= node['openvpn']['key']['ca_expire'] %>
 default_crl_days= 30
-default_md	= md5
+default_md	= sha256
 preserve	= no
 policy		= policy_anything
 [ policy_match ]
